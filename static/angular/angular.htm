@@ -1,0 +1,17 @@
+<div class="task-list">
+  <main ng-app="TaskList" ng-controller="taskController">
+    <form name="form" ng-submit="addTask()">
+      <div>
+        <input type="text" name="task" placeholder="Add a new task" ng-model="newTask" required="required"/>
+        <button ng-disabled="form.$invalid">Add task</button>
+      </div>
+    </form>
+    <ul>
+      <li class="fade" ng-repeat="task in tasks" ng-class="{'completed':task.done}"> <span>{{ task.title }}
+          <input type="checkbox" ng-attr-id="{{ 'task-' + $index }}" ng-model="task.done"/>
+          <label ng-attr-for="{{ 'task-' + $index }}"></label></span></li>
+    </ul>
+    <p class="fade all-complete" ng-show="!(tasks | filter:title).length">All tasks have been completed.</p>
+    <button ng-click="clearCompleted()">Clear completed tasks</button>
+  </main>
+</div>

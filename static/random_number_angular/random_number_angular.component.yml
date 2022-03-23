@@ -1,0 +1,32 @@
+### THESE FIELDS ARE REQUIRED. ###
+name: Random Number Angular
+description: 'Random Number Angular'
+### THESE FIELDS ARE OPTIONAL. ###
+# Put in the way the component should be added to the system. Current
+# options are block (default) and library.
+type: 'block'
+# Add your js and css files. Typically, this is a file included in the
+# component folder. However, it can also be an external file. For configuration
+# options, see https://www.drupal.org/docs/theming-drupal/adding-stylesheets-css-and-javascript-js-to-a-drupal-theme#libraries-options-details
+js:
+  'random_number_angular.js' : {}
+  //cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js: { type: external, minified: true, crossorigin: anonymous }
+
+css:
+  'random_number_angular.css' : {}
+# Define any Drupal library dependencies. This includes all core libraries as
+# well as any module or theme libraries. If you have a common library across
+# your components (like React/Vue), then add that as a Drupal library so it can
+# be managed in a single place.
+# dependencies:
+#  - core/jquery
+#  - module/library
+# We will look for an index.htm to load as the template. If that has a different
+# name or location, then put that here.
+template: 'random_number_angular.htm'
+# Set to true if you want this component availble for component_field. This is
+# false by default.
+# For details on cache options see:
+# https://api.drupal.org/api/drupal/core!lib!Drupal!Core!Render!theme.api.php/group/theme_render/8.2.x#sec_caching
+cache:
+  max-age: 60

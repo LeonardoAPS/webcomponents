@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+.randomNubmer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.randomNubmer #generator {
+  background: white;
+  max-width: 25em;
+  animation: fadeIn 1s ease-in-out;
+  backface-visibility: hidden;
+  transition: all 0.5s;
+}
+
+.randomNubmer #title {
+  color: #ffffff;
+  font-size: 1.2em;
+  padding: 1em;
+  background: #512DA8;
+}
+
+.randomNubmer #rNum {
+  padding: 0.8em;
+  font-size: 3em;
+  margin: 0;
+  color: #212121;
+  transition: padding 0.2s;
+}
+
+.randomNubmer #inputs, .randomNubmer #headers {
+  display: flex;
+  align-content: center;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  color: #212121;
+}
+.randomNubmer #inputs input, .randomNubmer #headers input {
+  -webkit-appearance: none;
+  border: 0;
+  font-size: 1.1em;
+  width: 20%;
+  border-bottom: 5px solid #512DA8;
+  margin-bottom: 2em;
+  background: #f0f0f0;
+  padding: 0.4em;
+  border-radius: 0;
+  -webkit-appearance: none;
+  transition: margin 0.2s;
+}
+.randomNubmer #inputs p, .randomNubmer #headers p {
+  font-size: 1em;
+  color: #212121;
+  font-weight: 400;
+}
+.randomNubmer #inputs #generate, .randomNubmer #headers #generate {
+  webkit-appearance: none;
+  width: 100%;
+  padding: 1em 0;
+  color: #ffffff;
+  font-size: 1.2em;
+  margin: 0;
+  display: block;
+  background: #673AB7;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+}
+.randomNubmer #inputs #generate:hover, .randomNubmer #headers #generate:hover {
+  background: #512DA8;
+}
+
+@media screen and (max-height: 30em) {
+  .randomNubmer #generator #rNum {
+    padding: 0;
+    padding-top: 0.1em;
+  }
+
+  .randomNubmer #inputs input {
+    margin-bottom: 1em;
+  }
+}

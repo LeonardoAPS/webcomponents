@@ -1,0 +1,21 @@
+html, body {
+  background-color: #2962FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+
+text {
+  fill: white;
+  font-size: 150%;
+}
+
+circle {
+  transition: stroke-dashoffset 0.15s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  stroke: white;
+  fill: transparent;
+}

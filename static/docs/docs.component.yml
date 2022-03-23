@@ -1,0 +1,9 @@
+name: Docs Table
+description: 'Docs Table.'
+js:
+  leo.js: {}
+#  //code.jquery.com/jquery-3.2.1.min.js: { type: external, minified: true, crossorigin: anonymous }  
+css:
+  leo.css: {}
+dependencies:
+ - component/react_lib

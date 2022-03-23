@@ -1,0 +1,7 @@
+name: Custom Components
+description: "Enable JS Custom Components"
+package: Custom
+core_version_requirement: ^9
+type: module
+dependencies:
+  - component

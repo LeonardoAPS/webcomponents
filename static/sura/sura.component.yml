@@ -1,0 +1,12 @@
+name: Sura
+description: 'Sura'
+js:
+  //stpoccms.blob.core.windows.net/customer/wc-getcustomers-sura.js: { type: external, minified: true, crossorigin: anonymous }
+  //cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.4/polyfill.js: { type: external, minified: true, crossorigin: anonymous }
+  //cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.2.10/webcomponents-bundle.js: { type: external, minified: true, crossorigin: anonymous }
+  //cdnjs.cloudflare.com/ajax/libs/zone.js/0.9.1/zone.min.js: { type: external, minified: true, crossorigin: anonymous }
+  //cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.2.10/custom-elements-es5-adapter.js: { type: external, minified: true, crossorigin: anonymous }
+  //cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.2.10/custom-elements-es5-adapter.js: { type: external, minified: true, crossorigin: anonymous }
+css:
+dependencies:
+ - component/example_react_lib
